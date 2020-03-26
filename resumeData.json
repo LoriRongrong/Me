@@ -1,0 +1,157 @@
+{
+  "main": {
+    "name": "Lori Liu",
+    "occupation": "Student",
+    "description": "Interested in Cognition, Artificial Intelligence, and Statistics",
+    "logo": "icon.png",
+    "image": "Profile.JPG",
+    "bio": "I am a motivated student researcher pursuing higher education in the field of mind, artificial intelligence, and affective computing. I believe the power of cognitive science in every aspect of our lives and would employ my skills and passion in my current and future research projects which hopefully contribute to the welfare of all human beings. ",
+    "contactmessage": "Eager to Know You! And You?",
+    "email": "rol044@ucsd.edu",
+    "phone": "619-980-1544",
+    "address": {
+      "city": "San Diego",
+      "state": "California"
+    },
+    "resumedownload": "resume.pdf",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/rongrong-liu-893526162/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/LoriRongrong/",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "",
+    "education": [
+      {
+        "school": "University of California San Diego",
+        "degree": "Bechelor of Science",
+        "graduated": "Expected December 2021",
+        "description": "Double major in Cognitive Science and Statistics, minor in Computer Science. Eager to combine visions of diverse disciplines to create systems and applications to understand, interpret, and facilitate human behaviors and cognitive activities."
+      }
+    ],
+    "work": [
+      {
+        "company": "Computer Science & Engineering Dept, UC San Diego",
+        "title": "Tutor",
+        "years": "Apr 2020 - Present",
+        "description": "TBD"
+      },
+      {
+        "company": "System Energy Efficiency Lab",
+        "title": "Undergrad Researcher ",
+        "years": "Sept 2018 - Present",
+        "description": "Focus on collecting data from a self-assembled light sensor and use such a database for training a model to predict light exposure level through machine learning algorithms (multi-layer neural network)."
+      },
+      {
+        "company": "Ramdya Lab at EPFL",
+        "title": "Research Intern",
+        "years": "Jul 2019 - Aug 2019",
+        "description": "Built coupled nonlinear oscillators for a leg of Drosophila melanogaster biomechanical model using Python. Optimize 37 parameters using Particle Swarm Optimization."
+      },
+      {
+        "company": "Cognitive Science Dept, UC San Diego",
+        "title": "Instructional Assistant",
+        "years": "Jan 2019 - Jun 2019",
+        "description": "Communicate with the teaching team and students; Lead sections to review class materials and promote active learning; Design weekly quizzes and help to organize midterms and the final"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Git",
+        "level": 60
+      },
+      {
+        "name": "Python",
+        "level": 55
+      },
+      {
+        "name": "Java",
+        "level": 50
+      },
+      {
+        "name": "Matlab",
+        "level": 90
+      },
+      {
+        "name": "Unix",
+        "level": 80
+      },
+      {
+        "name": "C/C++",
+        "level": 50
+      },
+      {
+        "name": "MS Office",
+        "level": 80
+      },
+      {
+        "name": "Research",
+        "level": 50
+      },
+      {
+        "name": "Oil Painting",
+        "level": 50
+      },
+      {
+        "name": "Hiking",
+        "level": 50
+      },
+      {
+        "name": "Human Computer Interaction",
+        "level": 50
+      },
+      {
+        "name": "Artificial Emotional Intelligence",
+        "level": 50
+      },
+      {
+        "name": "Sentiment Analysis",
+        "level": 50
+      },
+      {
+        "name": "Social Science",
+        "level": 50
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Canadian Wanderlust",
+        "image": "5.jpg"
+      },
+      {
+        "title": "Fury Fighting Gear",
+        "image": "1.JPG"
+      },
+      {
+        "title": "Original Thai Food",
+        "image": "2.JPG"
+      },
+      {
+        "title": "Resume Website",
+        "image": "6.JPG"
+      },
+      {
+        "title": "Smirkspace",
+        "image": "4.JPG"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You.",
+        "user": "Steve Jobs"
+      }
+    ]
+  }
+}
