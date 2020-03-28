@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Header extends Component {
   render() {
     if (this.props.data) {
-      var logo = "images/" + this.props.data.logo;
+      var logo = `${process.env.PUBLIC_URL}/images/` + this.props.data.logo;
       var name = this.props.data.name;
       var occupation = this.props.data.occupation;
       var description = this.props.data.description;

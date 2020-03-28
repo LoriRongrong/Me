@@ -6,15 +6,15 @@ class Portfolio extends Component {
   render() {
     if (this.props.data) {
       var projects = this.props.data.projects.map(function(project) {
-        var projectImage = "images/portfolio/" + project.image;
+        var projectImage = `${process.env.PUBLIC_URL}/images/portfolio/` + project.image;
         return (
           <div
-            key={project.title}
+            key={project.image}
             style={{ widht: 600, heght: 650, backgroundColor: "#25274d" }}
           >
             <img
               src={projectImage}
-              alt={project.title}
+              alt={project.image}
               style={{ width: 500, heght: 550 }}
             />
           </div>
