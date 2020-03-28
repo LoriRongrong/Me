@@ -125,23 +125,18 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Canadian Wanderlust",
-        "image": "5.jpg"
+        "image": "5.JPG"
       },
       {
-        "title": "Fury Fighting Gear",
         "image": "1.JPG"
       },
       {
-        "title": "Original Thai Food",
         "image": "2.JPG"
       },
       {
-        "title": "Resume Website",
         "image": "6.JPG"
       },
       {
-        "title": "Smirkspace",
         "image": "4.JPG"
       }
     ]
