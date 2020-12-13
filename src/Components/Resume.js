@@ -2,15 +2,9 @@ import React, { Component } from "react";
 import ReactWordcloud from "react-wordcloud";
 
 class Resume extends Component {
-  componentDidMount() {
-    setInterval(() => {
-      this.forceUpdate();
-    }, 3000);
-  }
-
   render() {
     if (this.props.data) {
-      var education = this.props.data.education.map(function(education) {
+      var education = this.props.data.education.map(function (education) {
         return (
           <div key={education.school}>
             <h3>{education.school}</h3>
@@ -22,7 +16,7 @@ class Resume extends Component {
           </div>
         );
       });
-      var work = this.props.data.work.map(function(work) {
+      var work = this.props.data.work.map(function (work) {
         return (
           <div key={work.company}>
             <h3>{work.company}</h3>
@@ -43,7 +37,7 @@ class Resume extends Component {
               "#9e5a63",
               "#31708e",
               "#e85a4f",
-              "#501b1d"
+              "#501b1d",
             ],
             fontFamily: "impact",
             fontSizes: [20, 40, 0],
@@ -54,9 +48,9 @@ class Resume extends Component {
             rotationAngles: [0, 45, 90],
             scale: "sqrt",
             spiral: "rectangular",
-            transitionDuration: 3000
+            transitionDuration: 3000,
           }}
-          words={this.props.data.skills.map(skill => {
+          words={this.props.data.skills.map((skill) => {
             return { text: skill.name, value: skill.level };
           })}
         />
@@ -64,8 +58,17 @@ class Resume extends Component {
     }
 
     return (
-      <section id="resume">
-        <div className="row education">
+      <section
+        className="smoothscroll"
+        id="resume"
+        style={{
+          overflow: "auto",
+          height: "inherit",
+          display: "block",
+          width: "100%",
+        }}
+      >
+        <div className="row education" style={{ overflow: "auto" }}>
           <div className="three columns header-col">
             <h1>
               <span>Education</span>
@@ -74,22 +77,32 @@ class Resume extends Component {
 
           <div className="nine columns main-col">
             <div className="row item">
-              <div className="twelve columns">{education}</div>
+              <div
+                className="twelve columns"
+                style={{ fontSize: "large", fontFamily: "calibri",letterSpacing:"1px"}}
+              >
+                {education}
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="row work">
+        <div className="row work" style={{ overflow: "auto" }}>
           <div className="three columns header-col">
             <h1>
               <span>Work</span>
             </h1>
           </div>
 
-          <div className="nine columns main-col">{work}</div>
+          <div
+            className="nine columns main-col"
+            style={{ fontSize: "large", fontFamily: "calibri", letterSpacing:"1px"}}
+          >
+            {work}
+          </div>
         </div>
 
-        <div className="row skill">
+        {/* <div className="row skill" style={{overflow: 'auto'}}>
           <div className="three columns header-col">
             <h1>
               <span>Skills</span>
@@ -97,7 +110,7 @@ class Resume extends Component {
           </div>
 
           <div className="twelve columns main-col">{skill}</div>
-        </div>
+        </div> */}
       </section>
     );
   }

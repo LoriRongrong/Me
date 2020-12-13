@@ -28,9 +28,11 @@ class Portfolio extends Component {
           <div className="twelve columns collapse">
             {/* <div className="center"> */}
             <h1>My Artwork</h1>
-            <Carousel showStatus={false} infiniteLoop={true}>
+            {/* <Carousel showStatus={false} infiniteLoop={true}>
               {projects}
-            </Carousel>
+            </Carousel> */}
+            <h3>under maintenance right now</h3>
+            <h3>Hope you find other sections interesting though!</h3>
           </div>
         </div>
       </section>

@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 
+
 class Header extends Component {
   render() {
     if (this.props.data) {
+      
       var logo = `${process.env.PUBLIC_URL}/images/` + this.props.data.logo;
       var name = this.props.data.name;
       var occupation = this.props.data.occupation;
@@ -10,7 +12,7 @@ class Header extends Component {
       var city = this.props.data.address.city;
       var networks = this.props.data.social.map(function(network) {
         return (
-          <li key={network.name}>
+          <li style={{paddingLeft:"100px", paddingRight:"100px"}}key={network.name}>
             <a href={network.url}>
               <i className={network.className}></i>
             </a>
@@ -21,7 +23,7 @@ class Header extends Component {
 
     return (
       <header id="home">
-        <nav id="nav-wrap">
+        {/* <nav id="nav-wrap">
           <div className="logo">
             <img src={logo} alt="Logo"></img>
           </div>
@@ -36,17 +38,25 @@ class Header extends Component {
           <ul id="nav" className="nav">
             <li className="current">
               <a className="smoothscroll" href="#home">
+             
                 Home
               </a>
             </li>
             <li>
               <a className="smoothscroll" href="#about">
-                About
+              
+              About
+                
               </a>
             </li>
             <li>
               <a className="smoothscroll" href="#resume">
                 Resume
+              </a>
+            </li>
+            <li>
+              <a className="smoothscroll" href="#caseStudy">
+                Case Study
               </a>
             </li>
             <li>
@@ -60,9 +70,11 @@ class Header extends Component {
               </a>
             </li>
           </ul>
-        </nav>
+        </nav> */}
+        
 
         <div className="row banner">
+          
           <div className="banner-text">
             <h1 className="responsive-headline">I'm {name}.</h1>
             <h3>
@@ -73,12 +85,13 @@ class Header extends Component {
           </div>
         </div>
 
-        <p className="scrolldown">
+        {/* <p className="scrolldown">
           <a className="smoothscroll" href="#about">
             <i className="icon-down-circle"></i>
           </a>
-        </p>
+        </p> */}
       </header>
+
     );
   }
 }

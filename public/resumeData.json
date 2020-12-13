@@ -2,10 +2,10 @@
   "main": {
     "name": "Lori Liu",
     "occupation": "Student",
-    "description": "Interested in Cognition, Artificial Intelligence, and Statistics",
+    "description": "Interested in humans and machines",
     "logo": "icon.png",
     "image": "Profile.JPG",
-    "bio": "I am a motivated student researcher pursuing higher education in the field of mind, artificial intelligence, and affective computing. I believe the power of cognitive science in every aspect of our lives and would employ my skills and passion in my current and future research projects which hopefully contribute to the welfare of all human beings. ",
+    "bio": "I believe the power of human-centered technology in every aspect of our lives! Regardless of industry or academia, incorporating a humane perspective into product/algorithm design is really important. I am learning cross-disciplines to gather perspectives. I am interested in interdisciplinary projects and I always want to bridge the gaps! Also, I designed my own logo at the top left~",
     "contactmessage": "Eager to Know You! And You?",
     "email": "rol044@ucsd.edu",
     "phone": "619-980-1544",
@@ -33,22 +33,28 @@
       {
         "school": "University of California San Diego",
         "degree": "Bechelor of Science",
-        "graduated": "Expected December 2021",
+        "graduated": "Expected 2021",
         "description": "Double major in Cognitive Science and Statistics, minor in Computer Science. Eager to combine visions of diverse disciplines to create systems and applications to understand, interpret, and facilitate human behaviors and cognitive activities."
       }
     ],
     "work": [
       {
+        "company": "Blue Marble Space Institute of Science",
+        "title": "Research Associate",
+        "years": "June 2020 - Sept 2020",
+        "description": "Explored on evolutionary game theory principles using agent-based models. Wrote a book chapter on the this work! "
+      },
+      {
         "company": "Computer Science & Engineering Dept, UC San Diego",
         "title": "Tutor",
         "years": "Apr 2020 - Present",
-        "description": "TBD"
+        "description": "Assist more than 100 students in understanding Java basics and data structures."
       },
       {
         "company": "System Energy Efficiency Lab",
         "title": "Undergrad Researcher ",
-        "years": "Sept 2018 - Present",
-        "description": "Focus on collecting data from a self-assembled light sensor and use such a database for training a model to predict light exposure level through machine learning algorithms (multi-layer neural network)."
+        "years": "Sept 2018 - June 2020",
+        "description": "Focused on collecting data from a self-assembled light sensor and used such a database for training a model to predict light exposure level through multi-layer neural network."
       },
       {
         "company": "Ramdya Lab at EPFL",
@@ -121,6 +127,79 @@
         "level": 50
       }
     ]
+  },
+  "casestudy":{
+    "showcase": "GoogleCal.png",
+    "objectives": [
+      {
+        "prompt": "Improving the life in pandemic",
+        "description": "Extend or redesign a feature of Google Calendar that helps reducing information overload.",
+        "obj": "Objectives",
+        "objContent": "We want to make a flow that better suits college students to use Google Calendar for organizing their daily activities."
+        
+      }
+    ],
+    "background":"I use Google Calendar increasingly after all my classes go online. Sometimes it is hard to manage since different events use different calendars. My teammate and I want to reduce online clutter noise in order to reduce information overload for college students, especially during pandemic. ",
+    "research":[
+      {
+        "method": "Interviews",
+        "methodDescription":"Usually I would choose to interview potential users face-to-face since I can have detailed information. However, because of the difficulty of meeting people these days, I prefer to use online survey to collect more information. Online survey is useful in that we can design the questions to collect a particular set of information. Through analysis the survey response, we hope non-trivial problems will be found. An alternative research method is to perform data analysis on mass review data from app store (which I hope can be used sometime in the future). ",
+        "interviews": "To get both quantitative and qualitative data, we designed multiple choice questions and open-ended questions. Two questions especially useful is the rating of different Google Calendar features, and the open-ended question. We received 23 responses in total. 56.5% of the our users both use Google Calendar professionally and personally, and 30.4% of the users use it for only personal purposes.  We also found that six out of thirteen responses from the open-ended question “Do you have any bad experience with using Google Calendar” mentioned about import/ export calendars. Therefore, we decided to tackle this feature to make it more intuitive for users. "
+      }
+    ],
+    "statement": "College students use Google Calendar to reduce information overload to minimize the problems of scheduling individual meetings during the pandemic. They need to utilize Google Calendar core features in a more easily grasped setting and make this process more efficient in order to satisfy their need for managing multiple schedules. ",
+    "personas":{
+      "description": "To further our understanding of the problem, and how it maybe be insightful of our redesign, we developed fictional personas in hopes of identifying user needs. ",
+      "pictures": {
+        "profiles1": "persona1.png",
+        "profiles2": "persona2.png"
+      },
+      "persona1Dept":"James just enter college. During the pandemic, James has to attend classes remotely. James wants to nicely import his class schedule on Google Calendar and make possible deadlines for assignments and exams in order to achieve academic success. ",
+      "persona2Dept": "Lucy is senior college student. In the meantime, she also works as a software engineering intern. Lucy wants to create a balance between school work and her internship. Meanwhile, she also wants to meet deadlines of both class assignments and coding projects from work, and avoid the conflicts among events.",
+      "explanation": "Lucy uses Google Calendar to better balance her daily schedules between school courses and her internship. She fits in 56.5% of the users who prefer the calendar for both professional and personal use. James uses Google Calendar only for his personal purposes, like marking exams and class schedules. He fits in 30.4% of the users we investigated for only personal use."
+    },
+    "UX": {
+      "redesign":"The design process began with UX-flow design. We first and foremost wanted to make sure the logic flows nicely. UX flow allows us to quickly architect the logic structure of our redesign. ",
+      "actualFlow":[
+        {"title": "UX flow",
+          "uX": "This flow reflects how we additionally decided to handle importing calendars. Google Calendar already has upload through URL and from files. However, it doesn't have a tool to jump directly from website to website. Hence, we added this feature. In total, we provided three different ways to complete the task.",
+          "flow": "UXFlow.png"
+        }
+      ]
+  },
+    "testing": [
+      {
+        "directions": "We created low-fidelity prototype using Figma and directed our users to use it as if they were actually using Google Calendar. The interviews were conducted through Zoom and our users provided very useful feedback! However, since it is the low-fidelity prototype, we missed some important transition processes, which created difficulty for them to use. The highlight of the design is the new feature mentioned above, and we added an import calendar button.",
+        "strength": [
+          {
+            "s":"The place of “import calendar” is really obvious."
+          },
+          {
+            "s":"The functionality is simple and intuitive."
+          }
+      ],
+        "confusion": [
+          {
+            "c":"Need to add close button continue button for some transition pages and pop-up windows."
+          },
+          {
+            "c":"Need clearer visual guidance."
+          }
+      ],
+      "viewpoint":"During user testing, we found that people liked the intuitive location of “import/share calendar”. However, we omitted a lot of detailed features and pages when designing our UX flows, so users might get confused when performing the importing calendar process. This can be specifically illustrated when users could only move forward to the next step without giving the chance of turning back and going forward when seeing the pop-up window."
+
+      }],
+    "hiFi": {
+      "description":"The high fidelity prototype is based on the UX flow with improvements on what users have suggested during user testing. We polished our transition pages as well necessary buttons. Furthermore, we detailed some design aspects like font and shapes to on-band with Google Calendar.",
+      "dropdown":"dropDown.png", 
+      "options": [
+       {"pic":"UX flow1.1.3.png"}, {"pic":"UX flow1.1.4.png"},{"pic":"UX flow1.1.8.1.png"}],
+      "outcome":[{"pic":"UX flow1.1.9_fail.png"},{"pic":"UX flow1.1.9.png"}],
+      "outcomeDescription": "According to the state of import success/failure, additional pop-up windows will be shown to users. We also setup to redirect to a helper page for verbal description on how to import the calendar if the previous import procedure failed. This helper page is similar to do a google search locally about the functionality of Google Calendars. "
+    },
+    
+    "reflection": "I really had a great time trying to figure out how to redesign Google Calendar as it is a very mature product. It was initially challenging with the open-ended prompt. We decided to let the users to tell their frustrations of the product instead of making assumption. Fortunately, the survey responses gave critical information on how to proceed on our redesign. Google Calendar already has great features but sometimes users don’t find it intuitive enough. I think, from the perspective of information offload, it is always easier to flatten a product’s logic and make processes straightforward. "
+    
   },
   "portfolio": {
     "projects": [
