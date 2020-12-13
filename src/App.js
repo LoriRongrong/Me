@@ -95,12 +95,12 @@ export default function App() {
           <div className="topnav">
             <ul id="nav" className="nav">
               <li style={{marginTop: "-20px" }}>
-                <Link to="/">
+                <Link to="/Me">
                   <img className="logo" src={logo} alt="Logo"></img>
                 </Link>
               </li>
               <li className="current">
-                <Link to="/">Home</Link>
+                <Link to="/Me">Home</Link>
               </li>
               <li>
                 <Link to="/about">About</Link>
@@ -120,7 +120,7 @@ export default function App() {
             </ul>
 
             <Switch>
-              <Route exact path="/">
+              <Route exact path="/Me">
                 <Header data={state.resumeData.main} />
               </Route>
               <Route path="/about">
