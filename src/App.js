@@ -94,49 +94,49 @@ export default function App() {
         <nav id="nav-wrap">
           <div className="topnav">
             <ul id="nav" className="nav">
-              <li style={{marginTop: "-20px" }}>
-                <Link to="/Me">
+              <li style={{ marginTop: "-20px" }}>
+                <Link to="/Me/">
                   <img className="logo" src={logo} alt="Logo"></img>
                 </Link>
               </li>
               <li className="current">
-                <Link to="/Me">Home</Link>
+                <Link to="/Me/">Home</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/Me/about">About</Link>
               </li>
               <li>
-                <Link to="/resume">Resume</Link>
+                <Link to="/Me/resume">Resume</Link>
               </li>
               <li>
-                <Link to="/caseStudy">Case Study</Link>
+                <Link to="/Me/caseStudy">Case Study</Link>
               </li>
               <li>
-                <Link to="/art">Art Work</Link>
+                <Link to="/Me/art">Art Work</Link>
               </li>
               <li>
-                <Link to="/quotes">Quotes</Link>
+                <Link to="/Me/quotes">Quotes</Link>
               </li>
             </ul>
 
             <Switch>
-              <Route exact path="/Me">
+              <Route exact path="/Me/">
                 <Header data={state.resumeData.main} />
               </Route>
-              <Route path="/about">
+              <Route path="/Me/about">
                 <About data={state.resumeData.main} />
               </Route>
 
-              <Route path="/resume">
+              <Route path="/Me/resume">
                 <Resume data={state.resumeData.resume} />
               </Route>
-              <Route path="/caseStudy">
+              <Route path="/Me/caseStudy">
                 <CaseStudy data={state.resumeData.casestudy} />
               </Route>
-              <Route path="/art">
+              <Route path="/Me/art">
                 <Portfolio data={state.resumeData.portfolio} />
               </Route>
-              <Route path="/quotes">
+              <Route path="/Me/quotes">
                 <Testimonials data={state.resumeData.testimonials} />
               </Route>
             </Switch>
