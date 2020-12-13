@@ -24,6 +24,7 @@
 
 body {
   background: #0f0f0f;
+  min-height: 500px;
 }
 
 /* ------------------------------------------------------------------ */
@@ -32,7 +33,7 @@ body {
 
 header {
   position: relative;
-  height: 800px;
+  height: 500px;
   min-height: 500px;
   width: 100%;
   background: #161415 url(../images/header-background.jpg) no-repeat top center;
@@ -40,7 +41,8 @@ header {
   background-size: cover !important;
   -webkit-background-size: cover !important;
   text-align: center;
-  overflow: hidden;
+  overflow: auto;
+  /* padding: 20px; */
 }
 
 /* vertically center banner section */
@@ -48,14 +50,15 @@ header:before {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  height: 100%;
+  /* height: 100%; */
 }
 header .banner {
   display: inline-block;
   vertical-align: middle;
   margin: 0 auto;
   width: 85%;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
+  padding-top: 100px;
   text-align: center;
 }
 
@@ -88,7 +91,7 @@ header .banner-text hr {
 }
 
 /* header social links */
-header .social {
+.social {
   margin: 24px 0;
   padding: 0;
   font-size: 30px;
@@ -132,10 +135,9 @@ header .scrolldown a:hover {
 
 /* primary navigation
 --------------------------------------------------------------------- */
-#nav-wrap .logo {
-  width: 70px;
-  height: 70px;
-  padding: 10px;
+.logo {
+  width: 50px;
+  height: 50px;
 }
 
 #nav-wrap ul,
@@ -149,18 +151,18 @@ header .scrolldown a:hover {
 
 /* nav-wrap */
 #nav-wrap {
-  font: 12px "Courier", sans-serif;
+  font: 15px "Courier", sans-serif;
   width: 100%;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 2.5px;
   z-index: 100;
-  position: fixed;
-  display: flex;
-  align-items: center;
+  position: relative;
+  display: list-item;
   justify-content: space-between;
   left: 0;
   top: 0;
 }
+
 .opaque {
   background-color: #9e5a63;
 }
@@ -171,16 +173,20 @@ header .scrolldown a:hover {
 }
 
 ul#nav {
-  min-height: 48px;
+  min-height: 80px;
   width: auto;
-
-  /* center align the menu */
+  letter-spacing: 2px;
+  font: 20px;
+  /* center align the menu*/
+  display: inline-flex;
   text-align: center;
+  align-items: center;
 }
 ul#nav li {
   position: relative;
   list-style: none;
   height: 48px;
+
   display: inline-block;
 }
 
@@ -214,10 +220,10 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #about {
-  background: #314455;
-  padding-top: 96px;
-  padding-bottom: 66px;
-  overflow: hidden;
+  /* background: #314455; */
+  padding-top: 50px;
+  padding-bottom: 0px;
+  overflow: auto;
 }
 
 #about a,
@@ -230,13 +236,16 @@ ul#nav li.current a {
 }
 
 #about h2 {
-  font: 22px/30px "Courier", sans-serif;
+  font: 22px/30px, sans-serif;
   color: #97aabd;
   margin-bottom: 12px;
+  text-align: left;
 }
 #about p {
+  font: times;
   line-height: 30px;
   color: #ffffff;
+  text-align: left;
 }
 #about .profile-pic {
   position: relative;
@@ -246,6 +255,7 @@ ul#nav li.current a {
 }
 #about .contact-details {
   width: 41.66667%;
+  text-align: left;
 }
 #about .download {
   width: 58.33333%;
@@ -255,8 +265,10 @@ ul#nav li.current a {
   padding-right: 5%;
 }
 #about .download .button {
-  margin-top: 6px;
+  margin-top: 10px;
   background: #444;
+  size:large;
+  padding: 10px;
 }
 #about .download .button:hover {
   background: #fff;
@@ -272,10 +284,10 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #resume {
-  background: #fff;
+  background: #cccccc;
   padding-top: 90px;
   padding-bottom: 72px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 #resume a,
@@ -295,16 +307,20 @@ ul#nav li.current a {
 #resume h1 span {
   border-bottom: 3px solid #644e5b;
   padding-bottom: 6px;
+  text-align: left;
 }
 #resume h3 {
   font: 25px/30px "Courier", sans-serif;
+  text-align: left;
 }
 
 #resume .header-col {
   padding-top: 9px;
+  text-align: left;
 }
 #resume .main-col {
   padding-right: 10%;
+  text-align: left;
 }
 
 .education,
@@ -353,7 +369,7 @@ ul#nav li.current a {
   font: 15px "Courier", sans-serif;
   color: #313131;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: normal;
   position: relative;
   top: -36px;
@@ -371,98 +387,47 @@ ul#nav li.current a {
   line-height: 42px;
   border-radius: 3px 0 0 3px;
 }
-/*
-.git {
-  	-moz-animation: git 2s ease;
-  	-webkit-animation: git 2s ease;
+
+/* ------------------------------------------------------------------ */
+/* e. case study Section
+/* ------------------------------------------------------------------ */
+#caseStudy {
+  padding-top: 20px;
+  text-align: left;
 }
-.illustrator {
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+#caseStudy h1 {
+  font-size: 25px;
+  color: #97aabd;
+  font: "Courier";
 }
-.reactjs {
-  	-moz-animation: reactjs 2s ease;
-  	-webkit-animation: reactjs 2s ease;
+#caseStudy p {
+  letter-spacing: 1px;
+  /* font-family: "Courier"; */
+  
 }
-.css {
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+.uniformStyling {
+    color: #c4c4c4;
+    font-size: large;
+    font-family: calibri;
 }
-.html5 {
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
-}
-.vuejs {
-  	-moz-animation: vuejs 2s ease;
-  	-webkit-animation: vuejs 2s ease;
-}
-.mongodb {
-  	-moz-animation: mongodb 2s ease;
-  	-webkit-animation: mongodb 2s ease;
+.problemStatement h1 {
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-style: italic;
+  
 }
 
-@-moz-keyframes git {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes reactjs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-moz-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
+.imgChild {
+  width: 25%;
+  float: left;
+  padding: 5px 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
-@-webkit-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
+  /* border: 2px solid red; */
 }
-@-webkit-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes reactjs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-webkit-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-webkit-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}  */
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
-
 #portfolio {
   background: #ebeeee;
   padding-top: 30px;
@@ -480,7 +445,7 @@ ul#nav li.current a {
 /* Portfolio Content */
 .portfolio-item .item-wrap {
   background: #fff;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
 
   -webkit-transition: all 0.3s ease-in-out;
@@ -708,7 +673,7 @@ call-to-action .button {
   position: relative;
   min-height: 200px;
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 #testimonials .text-container {
   padding-top: 96px;
@@ -838,7 +803,7 @@ call-to-action .button {
 }
 .slides > li {
   /*margin-right: 5px; */
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* Control Nav */
