@@ -10,56 +10,7 @@ import Resume from "./Components/Resume";
 import Testimonials from "./Components/Testimonials";
 import Portfolio from "./Components/Portfolio";
 import CaseStudy from "./Components/CaseStudy";
-// class App extends Component {
-//   constructor(props) {
-//     super(props);
-//     state = {
-//       foo: "bar",
-//       resumeData: {},
-//     };
 
-//     ReactGA.initialize("UA-110570651-1");
-//     ReactGA.pageview(window.location.pathname);
-//   }
-
-//   getResumeData() {
-//     $.ajax({
-//       url: `${process.env.PUBLIC_URL}/resumeData.json`,
-//       dataType: "json",
-//       cache: false,
-//       success: function (data) {
-//         this.setState({ resumeData: data });
-//       }.bind(this),
-//       error: function (xhr, status, err) {
-//         console.log(err);
-//         alert(err);
-//       },
-//     });
-//   }
-
-//   componentDidMount() {
-//     this.getResumeData();
-//   }
-
-//   render = () => {
-//     return (
-//       // this is the original code
-//       <div className="App">
-
-//         <Header data={state.resumeData.main}/>
-//         <About data={state.resumeData.main}/>
-//         <Resume data={state.resumeData.resume}/>
-//         <CaseStudy data={state.resumeData.casestudy}/>
-//         <Portfolio data={state.resumeData.portfolio}/>
-//         <Testimonials data={state.resumeData.testimonials}/>
-//         <Footer data={state.resumeData.main}/>
-//       </div>
-
-//     );
-//   }
-// }
-
-// export default App;
 export default function App() {
   const [state, setState] = useState({
     resumeData: {},
@@ -78,7 +29,6 @@ export default function App() {
         setState({ resumeData: data });
       },
       error: function (xhr, status, err) {
-        console.log(err);
         alert(err);
       },
     });
@@ -86,7 +36,7 @@ export default function App() {
 
   useEffect(() => {
     getResumeData();
-  }, []);
+  }, [getResumeData]);
 
   return (
     <div className="App">
@@ -95,48 +45,48 @@ export default function App() {
           <div className="topnav">
             <ul id="nav" className="nav">
               <li style={{ marginTop: "-20px" }}>
-                <Link to="/Me/">
+                <Link to="/Me">
                   <img className="logo" src={logo} alt="Logo"></img>
                 </Link>
               </li>
               <li className="current">
-                <Link to="/Me/">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/Me/about">About</Link>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/Me/resume">Resume</Link>
+                <Link to="/resume">Resume</Link>
               </li>
               <li>
-                <Link to="/Me/caseStudy">Case Study</Link>
+                <Link to="/caseStudy">Case Study</Link>
               </li>
               <li>
-                <Link to="/Me/art">Art Work</Link>
+                <Link to="/art">Art Work</Link>
               </li>
               <li>
-                <Link to="/Me/quotes">Quotes</Link>
+                <Link to="/quotes">Quotes</Link>
               </li>
             </ul>
 
             <Switch>
-              <Route exact path="/Me/">
+              <Route exact path="/">
                 <Header data={state.resumeData.main} />
               </Route>
-              <Route path="/Me/about">
+              <Route path="/about">
                 <About data={state.resumeData.main} />
               </Route>
 
-              <Route path="/Me/resume">
+              <Route path="/resume">
                 <Resume data={state.resumeData.resume} />
               </Route>
-              <Route path="/Me/caseStudy">
+              <Route path="/caseStudy">
                 <CaseStudy data={state.resumeData.casestudy} />
               </Route>
-              <Route path="/Me/art">
+              <Route path="/art">
                 <Portfolio data={state.resumeData.portfolio} />
               </Route>
-              <Route path="/Me/quotes">
+              <Route path="/quotes">
                 <Testimonials data={state.resumeData.testimonials} />
               </Route>
             </Switch>

@@ -30,14 +30,6 @@ class CaseStudy extends Component {
           </div>
         );
       });
-      // problem statement
-      // var statement = this.props.data.statement.map(function(statement){
-      //     return (
-      //         <div key={statement}>
-      //             <p>{statement}</p>
-      //         </div>
-      //     );
-      // });
       var statement = (
         <div>
           <p>{this.props.data.statement}</p>
@@ -51,7 +43,6 @@ class CaseStudy extends Component {
       var person1 =
         `${process.env.PUBLIC_URL}/images/` +
         this.props.data.personas.pictures.profiles1;
-      //   console.log(person1);
       var person2 =
         `${process.env.PUBLIC_URL}/images/` +
         this.props.data.personas.pictures.profiles2;
@@ -76,7 +67,6 @@ class CaseStudy extends Component {
         return (
           // how to place an image though
           <div key={actualFlow.title}>
-            {/* <h3>{actualFlow.title}</h3> */}
             <p>{actualFlow.uX}</p>
             <div>
               <img
@@ -152,7 +142,7 @@ class CaseStudy extends Component {
           })}
         </div>
       );
-
+// reflection 
       var reflect = (
         <div>
           <p>{this.props.data.reflection}</p>

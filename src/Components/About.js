@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 class About extends Component {
   render() {
-     console.log("here");
-
     if(this.props.data){
       var name = this.props.data.name;
       var profilepic= `${process.env.PUBLIC_URL}/images/`+this.props.data.image;
