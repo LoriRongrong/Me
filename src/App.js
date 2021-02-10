@@ -45,7 +45,7 @@ export default function App() {
           <div className="topnav">
             <ul id="nav" className="nav">
               <li style={{ marginTop: "-20px" }}>
-                <Link to="/Me">
+                <Link to="/">
                   <img className="logo" src={logo} alt="Logo"></img>
                 </Link>
               </li>
